@@ -1,0 +1,88 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/add info.css">
+    <title>New Student profile</title>
+
+    <nav id="nav-bar">
+        <ul type=none id="nav-list">
+            <img src="../pics/Cairo_University_Crest.png" class="nav_logo1">
+            <a href="Home.html">Home</a>
+            <a href="add info.html">Add New Student </a>
+            <a href="edit info.html">Edit Student Info</a>
+            <a href="departments.html">Student Departments</a>
+            <a href="status.html">Student Status</a>
+            <a href="search.html">Search</a>
+            <img src="../pics/index.jpg" id="nav_logo2">
+        </ul>
+    </nav>
+</head>
+ <body  ><!--min="20200001" max="20209999" -->
+    <div id="Studentinfo" class="Sinfo">
+        <h1>-- New Student Info  --</h1><br><br>
+    <form name="form1" action="/action_page.php" onsubmit="return checkForm()" method="post" required>
+        <label for="Sname"><b>Student Name:</b></label><br>
+         <input type="text" id="Sname" name="Sname" placeholder=" Enter the student name.."><br><br>
+
+         <label for="dob"><b>Date of birth:</b></label><br>
+        <input type="date" id="dob" name="dob" placeholder=" Enter the student's date of birth.."required min="2004-1-1"><br><br>
+   
+        <label for="id"><b>Student ID:</b></label><br>
+        <input type="text" id="id" name="id" placeholder=" Enter the student Id.." required ><br><br>
+
+        <label for="gpa"><b>Student GPA:</b></label><br>
+        <input type="number" id="gpa" name="gpa" placeholder=" Enter the student GPA.." required min="0" max="4"><br><br>
+
+        <label for="mail"><b>Student e-mail:</b></label><br>
+        <input type="email" id="mail" name="mail" placeholder=" Enter the student mail.."required><br><br>
+
+        <label for="Phone"><b>Student Phone:</b></label><br>
+        <input type="number" id="Phone" name="Phone" required minlength="11"placeholder="01xxxxxxxxx"><br><br>
+    
+    <label for ="level"><b>Student Level : </b></label><br>
+        <select id=" level" name="Student Level"required>
+            <option value="1st level">First Year</option>
+            <option value="2nd level">Second Year</option>
+            <option value="3rd level">Third Year</option>
+            <option value="4th level">Fourth Year</option></select><br><br>
+
+            <label for="student_department"><b>Student Department :</b><br>
+            <select id="student_department" name="Student Department" required>
+            
+                <option value="General">General</option>
+                <option value="Information Technology">Information Technology</option>
+                <option value="comouter Sience">Computer Science</option>
+                <option value="Information System">Information Systems</option>
+                <option value="Artificial Inelligence">Artificial Intelligence</option>
+                <option value="Decision Support">Decision Support</option>
+            </select>
+            <br><br>
+
+       
+        <p><b>Gender:</b></p>
+        <input type="radio" id="Female" name="gender" value="Female">
+        <label for="Female">Female</label><br>
+    
+        <input type="radio" id="Male" name="gender" value="Male">
+        <label for="Male">Male</label><br><br>
+        </form>
+
+    
+    <p><b>Student Status:</b></p>
+        <input type="radio"  id="ac" name="Status" value="Active"required>
+        <label for="ac">Active</label><br>
+        
+        <input type="radio"  id="iac" name="Status" value="Inactive"required>
+        <label for="iac">In-active</label><br><br>
+    
+        <input type="submit" value="Submit">
+      </form>
+         
+    </div>
+    <script src="../js/add.js.js">
+      
+    </script>
+</body>
+</html>

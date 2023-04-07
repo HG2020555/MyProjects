@@ -1,0 +1,112 @@
+
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>Student Assignment Page</title>
+
+
+ <style>
+    body
+    {
+        background-image:url("h.jpeg") ;
+        background-size: cover;
+        
+    }
+    div
+    {
+        margin-top: 25px;
+        margin-right: 150px;
+        margin-left: 150px;
+        margin-bottom: 25px;
+        
+        
+    }
+  
+    p.c
+    {
+        white-space: pre; 
+    }
+</style>
+
+<script src="../js/departments.js"></script>
+
+
+</head> 
+
+
+        <body>  
+            <form onsubmit="return check_form();" method="post" >
+                    
+           <h1>Student Assignment Department</h1>
+
+           <h2>This is a student Assignment Department form  please enter your information correctly : </h2>
+
+           <div>
+
+            <label  for="NAME">Student Name </label>
+            <input type ="text" id ="NAME" name =" NAME" placeholder="NAME" autofocus minlength="2" maxlength="50" required title="You only have to enter letters"/> 
+
+           </div>
+           
+
+           <div>
+
+            <label  for="ID">Student ID</label>
+            <input type ="text" id ="ID" name =" ID" placeholder="ID"  minlength="8" maxlength="8" required title="You only have to enter 8 numbers"/> 
+
+           </div>
+
+           
+           <div>
+
+            
+            <label  for="Gpa">Student Gpa</label>
+            <input type ="text" id ="Gpa" name ="GBA" placeholder="Gpa" minlength="1" maxlength="5" required title="You only have to enter a number from 1 to 4"/> 
+
+           </div> 
+
+
+           <div>
+
+        <label  for="Level">Student Level</label>
+        <select id ="Level" name ="level"  required > 
+           
+            <option name="option1" value="0" ></option>
+            <option value="1">Level 1</option>
+            <option value="2">Level 2</option>
+            <option value="3">Level 3</option>
+            <option value="4">Level 4</option>
+
+        </select>
+
+           </div>
+
+           <div>
+
+          <label for="Student">Select a Department</label>
+
+          <input list="Student Department" name ="Student_Department " placeholder="Enter a student department" id="Student" required title="Enter your department">
+
+          <datalist id="Student Department">
+
+            <option value="General">
+            <option value="Information Technology">
+            <option value="Computer science">
+            <option value="Information System">
+            <option value="Artificial Intelligence"> 
+            <option value="Decision Support">   
+
+          </datalist>
+
+           </div>       
+
+            <input type = "reset" />
+            <input type = "submit" />
+
+         
+        </form>
+       
+        </body>
+    
+</html> 
